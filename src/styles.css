@@ -1,0 +1,89 @@
+/**
+ * Body CSS
+ */
+
+html,
+body {
+    height: 100%;
+}
+
+html,
+body,
+input,
+textarea,
+button {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+
+/**
+ * Sidebar CSS
+ */
+
+#sidebar {
+    background-color: #E57373;
+    padding: 15px;
+}
+
+@media (min-width: 768px) {
+    #sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 180px;
+        height: 100%;
+        padding-top: 30px;
+    }
+}
+
+
+/**
+ * Content CSS
+ */
+@media (min-width: 768px) {
+    #content {
+        margin-left: 180px;
+    }
+}
+
+.floating-btn {
+    position: fixed;
+    bottom: 50px;
+    right: 50px
+}
+
+.modal {
+    padding: 50px 0;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    max-height: 300px;
+    background-color: #fff;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.modal-title {
+    font-size: 30px;
+    line-height: 34px;
+    color: rgba(15,0,31,0.82);
+    text-align: center;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.modal-content {
+    display: block;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 0 16px;
+}
+
+.error {
+    color: red;
+}
